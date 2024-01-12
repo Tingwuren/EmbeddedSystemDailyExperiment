@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"marquee\system_stm32f4xx.o"
+"marquee\main.o"
+"marquee\stm32f4xx_it.o"
+"marquee\gpio.o"
+"marquee\stm32f4xx_hal_msp.o"
+"marquee\startup_stm32f407xx.o"
+"marquee\stm32f4xx_hal_rcc_ex.o"
+"marquee\stm32f4xx_hal_dma.o"
+"marquee\stm32f4xx_hal_tim.o"
+"marquee\stm32f4xx_hal_flash_ramfunc.o"
+"marquee\stm32f4xx_hal_pwr_ex.o"
+"marquee\stm32f4xx_hal_gpio.o"
+"marquee\stm32f4xx_hal_flash.o"
+"marquee\stm32f4xx_hal_cortex.o"
+"marquee\stm32f4xx_hal_tim_ex.o"
+"marquee\stm32f4xx_hal_rcc.o"
+"marquee\stm32f4xx_hal_flash_ex.o"
+"marquee\stm32f4xx_hal_dma_ex.o"
+"marquee\stm32f4xx_hal_pwr.o"
+"marquee\stm32f4xx_hal.o"
+--library_type=microlib --strict --scatter "Marquee\Marquee.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Marquee.map" -o Marquee\Marquee.axf
